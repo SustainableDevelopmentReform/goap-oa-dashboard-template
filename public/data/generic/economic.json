@@ -1,0 +1,201 @@
+{
+  "lastUpdated": "2025-01-15",
+  "referenceYear": 2024,
+  "currency": "USD",
+  "indicators": {
+    "oceanGdpContribution": {
+      "value": 25,
+      "unit": "percent",
+      "description": "Ocean sectors contribution to national GDP"
+    },
+    "tourismRevenue": {
+      "value": 486,
+      "unit": "millions",
+      "description": "Annual marine tourism revenue"
+    },
+    "fisheriesEmployment": {
+      "value": 15000,
+      "unit": "number",
+      "description": "People employed in fisheries sector"
+    },
+    "householdConsumption": {
+      "value": 72,
+      "unit": "percent",
+      "description": "Household consumption dependent on ocean resources"
+    }
+  },
+  "sectors": [
+    {
+      "name": "Tourism & Recreation",
+      "value": 486,
+      "unit": "millions",
+      "percentage": 42
+    },
+    {
+      "name": "Fisheries & Aquaculture",
+      "value": 273,
+      "unit": "millions",
+      "percentage": 24
+    },
+    {
+      "name": "Coastal Transport",
+      "value": 156,
+      "unit": "millions",
+      "percentage": 14
+    },
+    {
+      "name": "Marine Biotechnology",
+      "value": 89,
+      "unit": "millions",
+      "percentage": 8
+    },
+    {
+      "name": "Offshore Energy",
+      "value": 67,
+      "unit": "millions",
+      "percentage": 6
+    },
+    {
+      "name": "Coastal Protection",
+      "value": 45,
+      "unit": "millions",
+      "percentage": 4
+    },
+    {
+      "name": "Research & Education",
+      "value": 23,
+      "unit": "millions",
+      "percentage": 2
+    }
+  ],
+  "metadata": {
+    "dataSource": "National Statistics Office Economic Survey 2024",
+    "methodology": "System of National Accounts (SNA) classification with ocean-specific adjustments",
+    "notes": "Values adjusted for inflation to 2024 USD"
+  },
+  "gdpGrowth": {
+    "title": "Real GDP Growth by Industry",
+    "unit": "%",
+    "description": "Annual industry growth rates showing economic composition",
+    "industries": [
+      {
+        "id": "real-gdp",
+        "name": "Real GDP",
+        "group": null,
+        "series": [
+          { "year": 2018, "value": 1.2, "status": "final" },
+          { "year": 2019, "value": 0.8, "status": "final" },
+          { "year": 2020, "value": -3.2, "status": "final" },
+          { "year": 2021, "value": 2.1, "status": "revised" },
+          { "year": 2022, "value": 2.4, "status": "provisional" }
+        ]
+      },
+      {
+        "id": "agriculture",
+        "name": "Agriculture & Fishing",
+        "group": "Primary production",
+        "series": [
+          { "year": 2018, "value": 1.5, "status": "final" },
+          { "year": 2019, "value": 0.9, "status": "final" },
+          { "year": 2020, "value": -1.8, "status": "final" },
+          { "year": 2021, "value": 3.2, "status": "revised" },
+          { "year": 2022, "value": 2.8, "status": "provisional" }
+        ]
+      },
+      {
+        "id": "tourism",
+        "name": "Tourism",
+        "group": "Tourism",
+        "series": [
+          { "year": 2018, "value": 4.2, "status": "final" },
+          { "year": 2019, "value": 2.9, "status": "final" },
+          { "year": 2020, "value": -28.5, "status": "final" },
+          { "year": 2021, "value": -14.2, "status": "revised" },
+          { "year": 2022, "value": 22.1, "status": "provisional" }
+        ]
+      },
+      {
+        "id": "manufacturing",
+        "name": "Manufacturing",
+        "group": "Secondary",
+        "series": [
+          { "year": 2018, "value": 0.5, "status": "final" },
+          { "year": 2019, "value": 0.2, "status": "final" },
+          { "year": 2020, "value": -2.1, "status": "final" },
+          { "year": 2021, "value": 1.8, "status": "revised" },
+          { "year": 2022, "value": 1.5, "status": "provisional" }
+        ]
+      },
+      {
+        "id": "construction",
+        "name": "Construction",
+        "group": "Secondary",
+        "series": [
+          { "year": 2018, "value": 2.1, "status": "final" },
+          { "year": 2019, "value": 1.2, "status": "final" },
+          { "year": 2020, "value": -4.5, "status": "final" },
+          { "year": 2021, "value": 0.9, "status": "revised" },
+          { "year": 2022, "value": 3.2, "status": "provisional" }
+        ]
+      },
+      {
+        "id": "transport",
+        "name": "Transport & Logistics",
+        "group": "Services",
+        "series": [
+          { "year": 2018, "value": 1.8, "status": "final" },
+          { "year": 2019, "value": 1.1, "status": "final" },
+          { "year": 2020, "value": -6.2, "status": "final" },
+          { "year": 2021, "value": 2.4, "status": "revised" },
+          { "year": 2022, "value": 2.9, "status": "provisional" }
+        ]
+      }
+    ]
+  },
+  "tourismGva": {
+    "title": "Tourism Direct GVA",
+    "unit": "USD millions",
+    "description": "Gross Value Added from tourism sector by sub-industry",
+    "industries": [
+      {
+        "id": "accommodation",
+        "name": "Accommodation",
+        "group": "Tourism",
+        "series": [
+          { "year": 2019, "value": 145, "status": "final" },
+          { "year": 2020, "value": 22, "status": "final" },
+          { "year": 2021, "value": 38, "status": "revised" },
+          { "year": 2022, "value": 98, "status": "provisional" }
+        ]
+      },
+      {
+        "id": "food-beverage",
+        "name": "Food & Beverage",
+        "group": "Tourism",
+        "series": [
+          { "year": 2019, "value": 85, "status": "final" },
+          { "year": 2020, "value": 12, "status": "final" },
+          { "year": 2021, "value": 18, "status": "revised" },
+          { "year": 2022, "value": 58, "status": "provisional" }
+        ]
+      },
+      {
+        "id": "attractions",
+        "name": "Attractions & Activities",
+        "group": "Tourism",
+        "series": [
+          { "year": 2019, "value": 62, "status": "final" },
+          { "year": 2020, "value": 8, "status": "final" },
+          { "year": 2021, "value": 15, "status": "revised" },
+          { "year": 2022, "value": 45, "status": "provisional" }
+        ]
+      }
+    ],
+    "totals": [
+      { "year": 2019, "value": 292, "status": "final" },
+      { "year": 2020, "value": 42, "status": "final" },
+      { "year": 2021, "value": 71, "status": "revised" },
+      { "year": 2022, "value": 201, "status": "provisional" }
+    ]
+  }
+}

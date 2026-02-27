@@ -1,0 +1,287 @@
+{
+  "areas": [
+    {
+      "id": "north-island",
+      "name": "North Island",
+      "type": "island",
+      "ecosystems": {
+        "coralReef": 52000,
+        "reefFlats": 28000,
+        "seagrass": 15000,
+        "mangroves": 12000,
+        "algae": 4200,
+        "tidalWetlands": 2800,
+        "other": null
+      },
+      "coordinates": {
+        "latitude": -15.5,
+        "longitude": 175.2
+      },
+      "description": "Largest island with extensive reef systems"
+    },
+    {
+      "id": "south-island",
+      "name": "South Island",
+      "type": "island",
+      "ecosystems": {
+        "coralReef": 45000,
+        "reefFlats": 24000,
+        "seagrass": 13000,
+        "mangroves": 10000,
+        "algae": 3800,
+        "tidalWetlands": 2500,
+        "other": null
+      },
+      "coordinates": {
+        "latitude": -16.8,
+        "longitude": 175.5
+      },
+      "description": "Second largest island with diverse ecosystems"
+    },
+    {
+      "id": "east-atoll",
+      "name": "East Atoll",
+      "type": "atoll",
+      "ecosystems": {
+        "coralReef": 32000,
+        "reefFlats": 18000,
+        "seagrass": 10000,
+        "mangroves": 8000,
+        "algae": 2500,
+        "tidalWetlands": 1800,
+        "other": null
+      },
+      "coordinates": {
+        "latitude": -16.2,
+        "longitude": 176.5
+      },
+      "description": "Remote atoll with pristine coral reefs"
+    }
+  ],
+  "social": {
+    "lastUpdated": "2025-01-15",
+    "atollId": "central",
+    "atollName": "Central Atoll",
+    "indicators": [
+      {
+        "id": "populationSize",
+        "label": "Population Size",
+        "shortLabel": "Pop.",
+        "description": "Total population of the island",
+        "icon": "population",
+        "unit": "number",
+        "tierLabels": {
+          "low": "< 500",
+          "moderate": "500-1000",
+          "high": "> 1000"
+        }
+      },
+      {
+        "id": "youthPopulationShare",
+        "label": "Youth Population Share",
+        "shortLabel": "Youth %",
+        "description": "Percentage of population aged 0-14",
+        "icon": "youth",
+        "unit": "percentage",
+        "tierLabels": {
+          "low": "< 15%",
+          "moderate": "15-25%",
+          "high": "> 25%"
+        }
+      },
+      {
+        "id": "tourismEmploymentShare",
+        "label": "Tourism Employment",
+        "shortLabel": "Tourism",
+        "description": "Percentage of workforce in tourism",
+        "icon": "tourism",
+        "unit": "percentage",
+        "tierLabels": {
+          "low": "< 10%",
+          "moderate": "10-30%",
+          "high": "> 30%"
+        }
+      },
+      {
+        "id": "fishingIncomeDependency",
+        "label": "Fishing Income Dependency",
+        "shortLabel": "Fishing",
+        "description": "Household income dependent on fishing",
+        "icon": "boat",
+        "unit": "percentage",
+        "tierLabels": {
+          "low": "< 30%",
+          "moderate": "30-60%",
+          "high": "> 60%"
+        }
+      },
+      {
+        "id": "foodSecurityDependence",
+        "label": "Food Security Dependence",
+        "shortLabel": "Food Sec.",
+        "description": "Reliance on local fish for protein",
+        "icon": "meal",
+        "unit": "percentage",
+        "tierLabels": {
+          "low": "< 40%",
+          "moderate": "40-70%",
+          "high": "> 70%"
+        }
+      },
+      {
+        "id": "coastalDamageExposure",
+        "label": "Coastal Damage Exposure",
+        "shortLabel": "Coastal Risk",
+        "description": "Households exposed to coastal hazards",
+        "icon": "wave",
+        "unit": "percentage",
+        "tierLabels": {
+          "low": "< 15%",
+          "moderate": "15-40%",
+          "high": "> 40%"
+        }
+      },
+      {
+        "id": "weeklyFishSeafoodSpend",
+        "label": "Weekly Fish Spending",
+        "shortLabel": "Spend",
+        "description": "Average weekly household seafood expenditure",
+        "icon": "currency",
+        "unit": "currency",
+        "tierLabels": {
+          "low": "< $20",
+          "moderate": "$20-50",
+          "high": "> $50"
+        }
+      },
+      {
+        "id": "stormSurgeExposure",
+        "label": "Storm Surge Exposure",
+        "shortLabel": "Storm Risk",
+        "description": "Population at risk from storm surge",
+        "icon": "damage",
+        "unit": "percentage",
+        "tierLabels": {
+          "low": "< 10%",
+          "moderate": "10-30%",
+          "high": "> 30%"
+        }
+      }
+    ],
+    "atollAverages": {
+      "populationSize": { "value": 750, "tier": "moderate", "iconCount": 2, "percentile": 0.5 },
+      "youthPopulationShare": { "value": 18.5, "tier": "moderate", "iconCount": 2, "percentile": 0.45 },
+      "tourismEmploymentShare": { "value": 22.0, "tier": "moderate", "iconCount": 2, "percentile": 0.55 },
+      "fishingIncomeDependency": { "value": 45.0, "tier": "moderate", "iconCount": 2, "percentile": 0.5 },
+      "foodSecurityDependence": { "value": 58.0, "tier": "moderate", "iconCount": 2, "percentile": 0.48 },
+      "coastalDamageExposure": { "value": 28.0, "tier": "moderate", "iconCount": 2, "percentile": 0.52 },
+      "weeklyFishSeafoodSpend": { "value": 35.0, "tier": "moderate", "iconCount": 2, "percentile": 0.5 },
+      "stormSurgeExposure": { "value": 22.0, "tier": "moderate", "iconCount": 2, "percentile": 0.45 }
+    },
+    "islands": [
+      {
+        "id": "island-a",
+        "name": "Island A",
+        "atollId": "central",
+        "population": 620,
+        "metrics": {
+          "populationSize": { "value": 620, "tier": "low", "iconCount": 1, "percentile": 0.25 },
+          "youthPopulationShare": { "value": 20.2, "tier": "moderate", "iconCount": 2, "percentile": 0.55 },
+          "tourismEmploymentShare": { "value": 15.0, "tier": "low", "iconCount": 1, "percentile": 0.3 },
+          "fishingIncomeDependency": { "value": 62.5, "tier": "high", "iconCount": 3, "percentile": 0.8 },
+          "foodSecurityDependence": { "value": 72.0, "tier": "high", "iconCount": 3, "percentile": 0.75 },
+          "coastalDamageExposure": { "value": 35.0, "tier": "high", "iconCount": 3, "percentile": 0.65 },
+          "weeklyFishSeafoodSpend": { "value": 28.0, "tier": "low", "iconCount": 1, "percentile": 0.35 },
+          "stormSurgeExposure": { "value": 31.0, "tier": "high", "iconCount": 3, "percentile": 0.7 }
+        },
+        "populationDistribution": {
+          "total": 620,
+          "males": 315,
+          "females": 305,
+          "ageDistribution": { "age0to14": 20.2, "age15to64": 60.1, "age65plus": 19.7 }
+        },
+        "socioeconomic": {
+          "totalPopulation": 620,
+          "households": 124,
+          "femaleShare": 49.2,
+          "dependencyRatio": 66.4,
+          "disabilityShare": 8.5,
+          "unemploymentShare": 6.2,
+          "tourismWorkers": 93,
+          "tourismShare": 15.0,
+          "fishingHouseholds": 78,
+          "oceanResourcesShare": 95.5
+        }
+      },
+      {
+        "id": "island-b",
+        "name": "Island B",
+        "atollId": "central",
+        "population": 845,
+        "metrics": {
+          "populationSize": { "value": 845, "tier": "moderate", "iconCount": 2, "percentile": 0.6 },
+          "youthPopulationShare": { "value": 17.1, "tier": "low", "iconCount": 1, "percentile": 0.35 },
+          "tourismEmploymentShare": { "value": 28.5, "tier": "high", "iconCount": 3, "percentile": 0.75 },
+          "fishingIncomeDependency": { "value": 38.0, "tier": "low", "iconCount": 1, "percentile": 0.3 },
+          "foodSecurityDependence": { "value": 52.0, "tier": "moderate", "iconCount": 2, "percentile": 0.45 },
+          "coastalDamageExposure": { "value": 20.0, "tier": "low", "iconCount": 1, "percentile": 0.25 },
+          "weeklyFishSeafoodSpend": { "value": 42.0, "tier": "high", "iconCount": 3, "percentile": 0.65 },
+          "stormSurgeExposure": { "value": 18.0, "tier": "low", "iconCount": 1, "percentile": 0.2 }
+        },
+        "populationDistribution": {
+          "total": 845,
+          "males": 428,
+          "females": 417,
+          "ageDistribution": { "age0to14": 17.1, "age15to64": 62.4, "age65plus": 20.5 }
+        },
+        "socioeconomic": {
+          "totalPopulation": 845,
+          "households": 169,
+          "femaleShare": 49.3,
+          "dependencyRatio": 60.2,
+          "disabilityShare": 6.8,
+          "unemploymentShare": 4.5,
+          "tourismWorkers": 241,
+          "tourismShare": 28.5,
+          "fishingHouseholds": 32,
+          "oceanResourcesShare": 42.0
+        }
+      },
+      {
+        "id": "island-c",
+        "name": "Island C",
+        "atollId": "central",
+        "population": 875,
+        "metrics": {
+          "populationSize": { "value": 875, "tier": "moderate", "iconCount": 2, "percentile": 0.65 },
+          "youthPopulationShare": { "value": 19.3, "tier": "moderate", "iconCount": 2, "percentile": 0.5 },
+          "tourismEmploymentShare": { "value": 20.5, "tier": "moderate", "iconCount": 2, "percentile": 0.48 },
+          "fishingIncomeDependency": { "value": 40.2, "tier": "low", "iconCount": 1, "percentile": 0.35 },
+          "foodSecurityDependence": { "value": 55.0, "tier": "moderate", "iconCount": 2, "percentile": 0.5 },
+          "coastalDamageExposure": { "value": 30.5, "tier": "moderate", "iconCount": 2, "percentile": 0.55 },
+          "weeklyFishSeafoodSpend": { "value": 38.0, "tier": "moderate", "iconCount": 2, "percentile": 0.5 },
+          "stormSurgeExposure": { "value": 19.5, "tier": "low", "iconCount": 1, "percentile": 0.25 }
+        },
+        "populationDistribution": {
+          "total": 875,
+          "males": 442,
+          "females": 433,
+          "ageDistribution": { "age0to14": 19.3, "age15to64": 61.2, "age65plus": 19.5 }
+        },
+        "socioeconomic": {
+          "totalPopulation": 875,
+          "households": 175,
+          "femaleShare": 49.5,
+          "dependencyRatio": 63.5,
+          "disabilityShare": 7.6,
+          "unemploymentShare": 5.3,
+          "tourismWorkers": 179,
+          "tourismShare": 20.5,
+          "fishingHouseholds": 44,
+          "oceanResourcesShare": 68.5
+        }
+      }
+    ],
+    "notes": "Generic sample social data for Central Atoll with three islands showing variation in tourism dependence, fishing reliance, and coastal vulnerability."
+  }
+}

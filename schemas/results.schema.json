@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Results tracking data schema",
+  "type": "object",
+  "properties": {
+    "intro": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "summary": { "type": "string" },
+        "policyHooks": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "lastUpdated": { "type": ["string", "null"] }
+      },
+      "required": ["title", "summary"],
+      "additionalProperties": false
+    },
+    "readinessStages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": ["design", "baseline", "triggers-defined", "capitalised", "paying", "closed"]
+          },
+          "label": { "type": "string" },
+          "description": { "type": ["string", "null"] }
+        },
+        "required": ["id", "label"],
+        "additionalProperties": false
+      }
+    },
+    "pilots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "areaId": { "type": ["string", "null"] },
+          "readinessStage": {
+            "type": "string",
+            "enum": ["design", "baseline", "triggers-defined", "capitalised", "paying", "closed"]
+          },
+          "readinessNote": { "type": ["string", "null"] },
+          "instrument": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "capitalSource": { "type": ["string", "null"] },
+              "capitalAmount": { "type": ["string", "null"] },
+              "privacy": {
+                "type": "string",
+                "enum": ["public", "masked", "private"]
+              },
+              "governance": { "type": ["string", "null"] },
+              "description": { "type": ["string", "null"] }
+            },
+            "required": ["type"],
+            "additionalProperties": false
+          },
+          "nbSolutionFocus": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "baselineYear": { "type": ["number", "null"] },
+          "summary": { "type": ["string", "null"] },
+          "verification": {
+            "type": "object",
+            "properties": {
+              "method": { "type": ["string", "null"] },
+              "cadence": { "type": ["string", "null"] },
+              "standard": { "type": ["string", "null"] },
+              "automated": { "type": "boolean" }
+            },
+            "additionalProperties": false
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "label": { "type": "string" },
+                "unit": { "type": ["string", "null"] },
+                "baseline": {
+                  "type": "object",
+                  "properties": {
+                    "value": { "type": ["number", "null"] },
+                    "display": { "type": ["string", "null"] },
+                    "year": { "type": ["number", "null"] },
+                    "note": { "type": ["string", "null"] }
+                  },
+                  "additionalProperties": false
+                },
+                "current": {
+                  "type": "object",
+                  "properties": {
+                    "value": { "type": ["number", "null"] },
+                    "display": { "type": ["string", "null"] },
+                    "year": { "type": ["number", "null"] },
+                    "note": { "type": ["string", "null"] }
+                  },
+                  "additionalProperties": false
+                },
+                "target": {
+                  "type": "object",
+                  "properties": {
+                    "value": { "type": ["number", "null"] },
+                    "display": { "type": ["string", "null"] },
+                    "year": { "type": ["number", "null"] },
+                    "note": { "type": ["string", "null"] }
+                  },
+                  "additionalProperties": false
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["not-started", "on-track", "at-risk", "achieved"]
+                },
+                "privacy": {
+                  "type": "string",
+                  "enum": ["public", "masked", "private"]
+                }
+              },
+              "required": ["id", "label"],
+              "additionalProperties": false
+            }
+          },
+          "triggers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "label": { "type": "string" },
+                "indicator": { "type": "string" },
+                "target": { "type": "string" },
+                "status": {
+                  "type": "string",
+                  "enum": ["not-started", "on-track", "at-risk", "achieved"]
+                },
+                "nextDue": { "type": ["string", "null"] },
+                "evidence": { "type": ["string", "null"] }
+              },
+              "required": ["id", "label", "indicator", "target", "status"],
+              "additionalProperties": false
+            }
+          },
+          "disbursement": {
+            "type": "object",
+            "properties": {
+              "nextWindow": { "type": ["string", "null"] },
+              "status": { "type": ["string", "null"] },
+              "evidenceRequired": { "type": ["string", "null"] }
+            },
+            "additionalProperties": false
+          },
+          "partners": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "communities": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "replication": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["id", "name", "readinessStage", "instrument"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["intro", "pilots"],
+  "additionalProperties": false
+}

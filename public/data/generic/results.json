@@ -1,0 +1,158 @@
+{
+  "intro": {
+    "title": "Ocean-Linked Instruments: Results Tracking Dashboard",
+    "summary": "Real-time tracking of results, readiness, and trigger status for pilot ocean-linked results-based financing instruments.",
+    "policyHooks": [
+      "SDG 14 — Life Below Water",
+      "Blue Economy Initiative",
+      "Climate Finance"
+    ],
+    "lastUpdated": "2025-01-15"
+  },
+  "readinessStages": [
+    { "id": "design", "label": "Design", "description": "Instrument structure being designed" },
+    { "id": "baseline", "label": "Baseline", "description": "Baseline data being collected" },
+    { "id": "triggers-defined", "label": "Triggers Defined", "description": "Performance triggers established" },
+    { "id": "capitalised", "label": "Capitalised", "description": "Capital committed" },
+    { "id": "paying", "label": "Paying", "description": "Results-based payments ongoing" },
+    { "id": "closed", "label": "Closed", "description": "Instrument concluded" }
+  ],
+  "pilots": [
+    {
+      "id": "pilot-001",
+      "name": "Northern Province Mangrove Restoration",
+      "areaId": "north-01",
+      "readinessStage": "paying",
+      "readinessNote": "Transition to annual payment cycle Q1 2025",
+      "instrument": {
+        "type": "Results-Based Payment for Conservation",
+        "capitalSource": "Climate Adaptation Fund",
+        "capitalAmount": "$2.8M",
+        "privacy": "public",
+        "governance": "Regional government + Conservation NGO partnership",
+        "description": "Performance-linked payments for mangrove restoration and carbon sequestration"
+      },
+      "nbSolutionFocus": ["Nature-based solutions", "Climate mitigation", "Coastal protection"],
+      "baselineYear": 2019,
+      "summary": "Restore 5,000 hectares of mangroves over 5 years; track carbon stock and fisheries productivity gains.",
+      "verification": {
+        "method": "Satellite imagery + quarterly field surveys",
+        "cadence": "Quarterly",
+        "standard": "Verified Carbon Standard (VCS)",
+        "automated": false
+      },
+      "metrics": [
+        {
+          "id": "mangrove-area",
+          "label": "Mangrove Area Restored",
+          "unit": "hectares",
+          "baseline": { "value": 0, "year": 2019 },
+          "current": { "value": 3400, "year": 2024 },
+          "target": { "value": 5000, "year": 2026 },
+          "status": "on-track",
+          "privacy": "public"
+        },
+        {
+          "id": "carbon-stock",
+          "label": "Carbon Stock in Restored Mangroves",
+          "unit": "tonnes CO₂e",
+          "baseline": { "value": 0, "year": 2019 },
+          "current": { "value": 195000, "year": 2024 },
+          "target": { "value": 280000, "year": 2026 },
+          "status": "on-track",
+          "privacy": "public"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "t-001",
+          "label": "Area restoration exceeds 3,000 ha",
+          "indicator": "Mangrove area restored",
+          "target": "3,000 hectares",
+          "status": "achieved",
+          "evidence": "Satellite imagery Q4 2024"
+        },
+        {
+          "id": "t-002",
+          "label": "Carbon stock reaches 180,000 tonnes CO₂e",
+          "indicator": "Carbon accumulation",
+          "target": "180,000 tonnes",
+          "status": "achieved",
+          "evidence": "Field survey + carbon model Q3 2024"
+        },
+        {
+          "id": "t-003",
+          "label": "Community employment reaches 150 person-years",
+          "indicator": "Local employment",
+          "target": "150 person-years",
+          "status": "on-track",
+          "nextDue": "2025-06-30"
+        }
+      ],
+      "disbursement": {
+        "nextWindow": "2025-03-31",
+        "status": "Pending trigger verification for Q1 2025 payment",
+        "evidenceRequired": "Satellite verification + Q4 2024 audit report"
+      },
+      "partners": ["Environmental Ministry", "Regional Government", "Conservation International"],
+      "communities": ["Northern Province coastal communities"],
+      "replication": ["Southern Province (pipeline 2025)", "Eastern Region (planned 2026)"]
+    },
+    {
+      "id": "pilot-002",
+      "name": "Island Fisheries Sustainability Fund",
+      "areaId": "island-central",
+      "readinessStage": "triggers-defined",
+      "readinessNote": "Baseline data collection 80% complete; payment window Q3 2025",
+      "instrument": {
+        "type": "Payment for Fisheries Sustainability",
+        "capitalSource": "World Bank Blue Economy Fund",
+        "capitalAmount": "$1.5M",
+        "privacy": "masked",
+        "governance": "Fishing cooperative + Fisheries Ministry",
+        "description": "Incentivise sustainable fishing practices through performance-based compensation"
+      },
+      "nbSolutionFocus": ["Sustainable fisheries", "Livelihood improvement"],
+      "baselineYear": 2022,
+      "summary": "Measure and reward improvements in fish stocks and fishing community welfare through sustainable practices.",
+      "verification": {
+        "method": "Acoustic surveys + fisher interviews",
+        "cadence": "Semi-annual",
+        "automated": false
+      },
+      "metrics": [
+        {
+          "id": "fish-stock",
+          "label": "Fish Stock Index",
+          "unit": "Index (2022=100)",
+          "baseline": { "value": 100, "year": 2022 },
+          "current": { "value": 108, "year": 2024 },
+          "target": { "value": 125, "year": 2027 },
+          "status": "on-track",
+          "privacy": "masked"
+        },
+        {
+          "id": "fisher-income",
+          "label": "Average Fisher Household Income",
+          "unit": "USD/year",
+          "baseline": { "value": 5800, "year": 2022 },
+          "current": { "value": 6200, "year": 2024 },
+          "target": { "value": 7500, "year": 2027 },
+          "status": "on-track",
+          "privacy": "masked"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "t-101",
+          "label": "Fish stock index rises to 105",
+          "indicator": "Stock status",
+          "target": "Index = 105",
+          "status": "achieved"
+        }
+      ],
+      "partners": ["Fisheries Ministry", "Island Fishing Cooperative"],
+      "communities": ["Central Island fishing community"]
+    }
+  ]
+}

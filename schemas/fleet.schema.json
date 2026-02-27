@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Maritime Fleet",
+  "type": "object",
+  "required": ["vessels"],
+  "properties": {
+    "vessels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "mmsi",
+          "name",
+          "flag",
+          "type",
+          "grossTonnage",
+          "status"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "mmsi": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "flag": { "type": "string", "minLength": 1 },
+          "type": { "type": "string", "minLength": 1 },
+          "grossTonnage": { "type": "number", "minimum": 0 },
+          "netTonnage": { "type": "number", "minimum": 0 },
+          "yearBuilt": { "type": "integer", "minimum": 1900 },
+          "status": {
+            "type": "string",
+            "enum": ["active", "inactive", "planned"]
+          },
+          "owner": { "type": "string" },
+          "operator": { "type": "string" },
+          "homePort": { "type": "string" },
+          "crewCount": { "type": "integer", "minimum": 0 },
+          "domesticCrew": { "type": "integer", "minimum": 0 },
+          "lastPortCall": { "type": "string", "format": "date" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

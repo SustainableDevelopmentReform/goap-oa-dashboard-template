@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Maritime Traffic",
+  "type": "object",
+  "required": ["ports", "monthlyTrend", "metadata"],
+  "properties": {
+    "ports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "country",
+          "arrivals",
+          "departures",
+          "cargoVolume",
+          "cargoUnit",
+          "vesselTypes"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "country": { "type": "string", "minLength": 1 },
+          "arrivals": { "type": "integer", "minimum": 0 },
+          "departures": { "type": "integer", "minimum": 0 },
+          "cargoVolume": { "type": "number", "minimum": 0 },
+          "cargoUnit": { "type": "string", "minLength": 1 },
+          "vesselTypes": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "monthlyTrend": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["month", "arrivals", "departures", "cargo"],
+        "properties": {
+          "month": { "type": "string", "minLength": 1 },
+          "arrivals": { "type": "integer", "minimum": 0 },
+          "departures": { "type": "integer", "minimum": 0 },
+          "cargo": { "type": "number", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["country", "dataYear", "lastUpdated"],
+      "properties": {
+        "country": { "type": "string", "minLength": 1 },
+        "dataYear": { "type": "integer", "minimum": 1900 },
+        "lastUpdated": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

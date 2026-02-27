@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Economic Data",
+  "type": "object",
+  "required": ["lastUpdated", "referenceYear", "currency", "indicators", "sectors", "metadata"],
+  "properties": {
+    "lastUpdated": { "type": "string", "format": "date" },
+    "referenceYear": { "type": "integer" },
+    "currency": { "type": "string", "minLength": 1 },
+    "indicators": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value", "unit", "description"],
+        "properties": {
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sectors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "value", "unit"],
+        "properties": {
+          "name": { "type": "string" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "percentage": { "type": ["number", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["dataSource", "methodology"],
+      "properties": {
+        "dataSource": { "type": "string" },
+        "methodology": { "type": "string" },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "gdpGrowth": { "$ref": "#/$defs/timeSeries" },
+    "tourismGva": { "$ref": "#/$defs/timeSeries" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "seriesPoint": {
+      "type": "object",
+      "required": ["year", "value"],
+      "properties": {
+        "year": { "type": "integer" },
+        "value": { "type": "number" },
+        "status": { "type": "string", "enum": ["final", "revised", "provisional"] }
+      },
+      "additionalProperties": false
+    },
+    "industrySeries": {
+      "type": "object",
+      "required": ["id", "name", "series"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "group": { "type": ["string", "null"] },
+        "series": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/seriesPoint" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "timeSeries": {
+      "type": "object",
+      "required": ["title", "unit", "industries"],
+      "properties": {
+        "title": { "type": "string" },
+        "unit": { "type": "string" },
+        "description": { "type": ["string", "null"] },
+        "industries": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/industrySeries" }
+        },
+        "totals": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/seriesPoint" }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

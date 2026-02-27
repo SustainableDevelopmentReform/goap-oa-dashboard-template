@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Maritime Overview",
+  "type": "object",
+  "required": ["metadata", "kpis"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["country", "dataYear", "lastUpdated", "source"],
+      "properties": {
+        "country": { "type": "string", "minLength": 1 },
+        "dataYear": { "type": "integer", "minimum": 1900 },
+        "lastUpdated": { "type": "string", "format": "date" },
+        "source": { "type": "string", "minLength": 1 },
+        "reportingAcronym": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "kpis": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/kpi" }
+    },
+    "economic": {
+      "type": "object",
+      "properties": {
+        "fleetValue": { "$ref": "#/$defs/kpi" },
+        "annualRevenue": { "$ref": "#/$defs/kpi" },
+        "employmentContribution": { "$ref": "#/$defs/kpi" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "kpi": {
+      "type": "object",
+      "required": ["value", "unit", "description"],
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "asGdpPercentage": { "type": "number" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,65 @@
+{
+  "ports": [
+    {
+      "id": "port-honiara",
+      "name": "Port Honiara",
+      "country": "Generic Island Nation",
+      "arrivals": 234,
+      "departures": 234,
+      "cargoVolume": 125000,
+      "cargoUnit": "tonnes",
+      "vesselTypes": {
+        "GeneralCargo": 58,
+        "Container": 42,
+        "Multipurpose": 35,
+        "Tanker": 18,
+        "Refrigerated": 20,
+        "Other": 61
+      }
+    },
+    {
+      "id": "port-gizo",
+      "name": "Port Gizo",
+      "country": "Generic Island Nation",
+      "arrivals": 156,
+      "departures": 156,
+      "cargoVolume": 68000,
+      "cargoUnit": "tonnes",
+      "vesselTypes": {
+        "GeneralCargo": 42,
+        "Fishing": 35,
+        "Multipurpose": 18,
+        "Container": 12,
+        "Other": 49
+      }
+    },
+    {
+      "id": "port-tulagi",
+      "name": "Port Tulagi",
+      "country": "Generic Island Nation",
+      "arrivals": 98,
+      "departures": 98,
+      "cargoVolume": 45000,
+      "cargoUnit": "tonnes",
+      "vesselTypes": {
+        "GeneralCargo": 28,
+        "Multipurpose": 12,
+        "Container": 8,
+        "Other": 50
+      }
+    }
+  ],
+  "monthlyTrend": [
+    {"month": "Jan", "arrivals": 285, "departures": 285, "cargo": 142000},
+    {"month": "Feb", "arrivals": 268, "departures": 268, "cargo": 135000},
+    {"month": "Mar", "arrivals": 312, "departures": 312, "cargo": 158000},
+    {"month": "Apr", "arrivals": 298, "departures": 298, "cargo": 152000},
+    {"month": "May", "arrivals": 275, "departures": 275, "cargo": 138000},
+    {"month": "Jun", "arrivals": 268, "departures": 268, "cargo": 135000}
+  ],
+  "metadata": {
+    "country": "Generic Island Nation",
+    "dataYear": 2024,
+    "lastUpdated": "2025-01-15"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Narrative Content",
+  "type": "object",
+  "required": ["introduction", "sections", "footer"],
+  "properties": {
+    "introduction": {
+      "type": "object",
+      "required": ["title", "content", "lastUpdated"],
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "lastUpdated": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "content", "order", "images"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "content": { "type": "string" },
+          "order": { "type": "integer" },
+          "images": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["filename", "altText"],
+              "properties": {
+                "filename": { "type": "string" },
+                "caption": { "type": ["string", "null"] },
+                "altText": { "type": "string" },
+                "position": {
+                  "type": ["string", "null"],
+                  "enum": ["left", "right", "center", null]
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "footer": {
+      "type": "object",
+      "required": ["attribution", "dataSourceCitation"],
+      "properties": {
+        "attribution": { "type": "string" },
+        "dataSourceCitation": { "type": "string" },
+        "contactInfo": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,239 @@
+{
+  "mapConfig": {
+    "center": {
+      "latitude": -16,
+      "longitude": 175
+    },
+    "defaultZoom": 7,
+    "maxZoom": 12,
+    "minZoom": 5,
+    "baseMapStyle": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+  },
+  "boundaries": {
+  "national": {
+    "type": "Feature",
+    "properties": {
+      "name": "Generic Island Nation",
+      "area_km2": 18272,
+      "population": 900000
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [176.45880741422417, -17.452484884664717],
+          [176.32697147672417, -17.87122268933298],
+          [176.67853397672417, -18.6224566487439],
+          [177.55744022672417, -19.41183860713554],
+          [178.80988163297417, -19.63963786512229],
+          [180.23810428922417, -19.40147647763415],
+          [181.00714725797417, -19.46363934358499],
+          [181.20490116422417, -19.887777941876028],
+          [180.74347538297417, -20.96877407346083],
+          [181.05109257047417, -21.409246475717563],
+          [181.64435428922417, -21.255742527133854],
+          [182.29254764859917, -19.62929033152409],
+          [182.41339725797417, -18.06977951308895],
+          [181.75269052390124, -16.478597184502277],
+          [180.35895389859917, -15.471839025844538],
+          [179.44708866422417, -15.556527282932331],
+          [177.48053592984917, -16.243313140372383],
+          [176.49176639859917, -17.30569779467673],
+          [176.45880741422417, -17.452484884664717]
+        ]
+      ]
+    }
+  },
+  "subnational": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "north-island",
+          "name": "North Island",
+          "area_km2": 400
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [179.9628537227799, -15.721424195754524],
+              [180.00130587121737, -15.8020451281386],
+              [180.15786104699862, -15.812615987917654],
+              [180.15374117395174, -15.710848586050568],
+              [180.00954561731112, -15.655317633813532],
+              [179.9628537227799, -15.721424195754524]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "south-island",
+          "name": "South Island",
+          "area_km2": 5000
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [177.8985226004345, -19.23451250339688],
+              [178.1841671316845, -19.265628704802722],
+              [178.475304826997, -19.161885113661448],
+              [178.6675655691845, -18.949006887078806],
+              [178.6675655691845, -18.54847843012748],
+              [178.420373186372, -18.55368617149249],
+              [178.354455217622, -18.824268911532574],
+              [178.134728655122, -18.86066041448373],
+              [177.882043108247, -19.078843199146096],
+              [177.8985226004345, -19.23451250339688]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "east-atoll",
+          "name": "East Atoll",
+          "area_km2": 350
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [181.66659798092996, -17.852150711718814],
+              [181.6295191235081, -17.873717677269195],
+              [181.62059273190653, -17.92272376867968],
+              [181.65011848874246, -17.969756866138958],
+              [181.70573677487528, -17.97694137655334],
+              [181.77165474362525, -17.932523361624085],
+              [181.75791655400926, -17.890052056953895],
+              [181.72221626706278, -17.856725741195355],
+              [181.68788399167215, -17.846921962531923],
+              [181.66659798092996, -17.852150711718814]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+},
+  "locations": [
+    {
+      "id": "capital",
+      "name": "Capital City",
+      "type": "capital",
+      "coordinates": {
+        "latitude": -18.12,
+        "longitude": 178.44
+      },
+      "description": "National capital and largest city"
+    },
+    {
+      "id": "study-site-1",
+      "name": "Marine Reserve Alpha",
+      "type": "study-site",
+      "coordinates": {
+        "latitude": -17.96,
+        "longitude": 179.24
+      },
+      "description": "Primary research and monitoring site"
+    },
+    {
+      "id": "study-site-2",
+      "name": "Coastal Research Station",
+      "type": "study-site",
+      "coordinates": {
+        "latitude": -16.46,
+        "longitude": 179.02
+      },
+      "description": "Long-term ecological monitoring station"
+    }
+  ],
+  "geeApp": {
+    "url": "https://mitchest.users.earthengine.app/view/generic-spatial-explorer",
+    "title": "Interactive Ocean Ecosystem Map",
+    "description": "Explore detailed ocean ecosystem distribution and temporal change analysis. Use the time slider to view ecosystem changes from 1990 to present."
+  },
+  "legend": [
+    {
+      "ecosystem": "coralReef",
+      "color": "#87CEEB",
+      "label": "Coral Reef"
+    },
+    {
+      "ecosystem": "reefFlats",
+      "color": "#FFE4B5",
+      "label": "Reef Flats"
+    },
+    {
+      "ecosystem": "seagrass",
+      "color": "#228B22",
+      "label": "Seagrass"
+    },
+    {
+      "ecosystem": "mangroves",
+      "color": "#00FF00",
+      "label": "Mangroves"
+    },
+    {
+      "ecosystem": "algae",
+      "color": "#8B4513",
+      "label": "Algae"
+    },
+    {
+      "ecosystem": "tidalWetlands",
+      "color": "#FFB6C1",
+      "label": "Tidal Wetlands"
+    }
+  ],
+  "ecosystemRasters": [
+    {
+      "id": "coral-extent",
+      "label": "Coral Reef Extent (2024)",
+      "source": "https://example.com/rasters/coral-extent-2024.tif",
+      "color": "#87CEEB",
+      "opacity": 0.7,
+      "description": "Cloud-optimised GeoTIFF showing coral reef extent mapping from satellite imagery. Updated annually."
+    },
+    {
+      "id": "seagrass-extent",
+      "label": "Seagrass Extent (2024)",
+      "source": "https://example.com/rasters/seagrass-extent-2024.tif",
+      "color": "#228B22",
+      "opacity": 0.7,
+      "description": "Cloud-optimised GeoTIFF showing seagrass meadow distribution. Updated annually."
+    },
+    {
+      "id": "mangrove-extent",
+      "label": "Mangrove Extent (2024)",
+      "source": "https://example.com/rasters/mangrove-extent-2024.tif",
+      "color": "#00FF00",
+      "opacity": 0.7,
+      "description": "Cloud-optimised GeoTIFF showing mangrove forest extent. Updated annually."
+    }
+  ],
+  "overlays": [
+    {
+      "id": "marine-protected-areas",
+      "name": "Marine Protected Areas",
+      "type": "geojson",
+      "url": "https://example.com/overlays/mpas.geojson",
+      "fillColor": "#FF6B6B",
+      "outlineColor": "#C92A2A",
+      "opacity": 0.5
+    },
+    {
+      "id": "fishing-zones",
+      "name": "Fishing Zones",
+      "type": "geojson",
+      "url": "https://example.com/overlays/fishing-zones.geojson",
+      "fillColor": "#4C6EF5",
+      "outlineColor": "#364FC7",
+      "opacity": 0.3
+    }
+  ]
+}

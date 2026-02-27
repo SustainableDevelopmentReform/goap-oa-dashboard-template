@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "country": "Generic Island Nation",
+    "dataYear": 2024,
+    "lastUpdated": "2025-01-15",
+    "source": "National Maritime Authority",
+    "reportingAcronym": "NMA",
+    "notes": "Generic sample maritime data for framework demonstration"
+  },
+  "kpis": {
+    "fleetTotal": {
+      "value": 42,
+      "unit": "vessels",
+      "description": "Total registered vessels in national fleet"
+    },
+    "activeFleet": {
+      "value": 38,
+      "unit": "vessels",
+      "description": "Vessels actively engaged in commercial operations"
+    },
+    "totalTonnage": {
+      "value": 185420,
+      "unit": "gross tonnage",
+      "description": "Combined gross tonnage of fleet"
+    },
+    "crewTotal": {
+      "value": 756,
+      "unit": "seafarers",
+      "description": "Total crew across all vessels"
+    },
+    "domesticCrewShare": {
+      "value": 62.5,
+      "unit": "%",
+      "description": "Percentage of crew that are national citizens"
+    },
+    "averageFleetAge": {
+      "value": 11.8,
+      "unit": "years",
+      "description": "Average age of fleet"
+    }
+  },
+  "economic": {
+    "fleetValue": {
+      "value": 2780000000,
+      "unit": "USD",
+      "description": "Estimated total fleet value",
+      "asGdpPercentage": 3.2
+    },
+    "annualRevenue": {
+      "value": 425000000,
+      "unit": "USD",
+      "description": "Annual fleet revenues (estimate)"
+    },
+    "employmentContribution": {
+      "value": 8400,
+      "unit": "FTE",
+      "description": "Full-time equivalent jobs supported (direct + indirect)"
+    }
+  }
+}

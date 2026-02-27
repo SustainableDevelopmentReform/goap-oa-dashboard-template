@@ -1,0 +1,46 @@
+{
+  "currency": "USD",
+  "lastUpdated": "2025-01-15",
+  "strategic": {
+    "metrics": {
+      "fleetValue": 2780000000,
+      "fleetValuePerVessel": 66190476,
+      "fleetValueAsGdpPercent": 3.2,
+      "medianFleetAge": 11.8,
+      "totalRevenue": 425000000,
+      "crewWageCosts": 124000000,
+      "maintenanceCosts": 87000000
+    },
+    "ageDistribution": [
+      { "years": 5, "count": 6 },
+      { "years": 10, "count": 15 },
+      { "years": 15, "count": 13 },
+      { "years": 20, "count": 6 },
+      { "years": 25, "count": 2 }
+    ],
+    "depreciation": [
+      { "year": 2020, "value": 3050000000 },
+      { "year": 2021, "value": 2975000000 },
+      { "year": 2022, "value": 2900000000 },
+      { "year": 2023, "value": 2840000000 },
+      { "year": 2024, "value": 2780000000 }
+    ],
+    "composition": [
+      { "type": "General Cargo", "count": 4 },
+      { "type": "Container Ship", "count": 2 },
+      { "type": "Multipurpose Vessel", "count": 2 },
+      { "type": "Refrigerated Cargo", "count": 1 },
+      { "type": "Fishing Vessel", "count": 1 }
+    ],
+    "workforce": {
+      "low": 320,
+      "mid": 280,
+      "high": 156
+    },
+    "revenue": [
+      { "source": "Domestic routes", "value": 196000000 },
+      { "source": "Regional freight", "value": 151000000 },
+      { "source": "Port and support services", "value": 78000000 }
+    ]
+  }
+}

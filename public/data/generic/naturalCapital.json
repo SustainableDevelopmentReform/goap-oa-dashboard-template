@@ -1,0 +1,69 @@
+{
+  "year": 2023,
+  "title": "Marine Natural Inputs Powering Blue Economy",
+  "categories": [
+    {
+      "id": "fish",
+      "label": "Wild Fish & Shellfish",
+      "unit": "thousand tonnes",
+      "provision": 2800,
+      "usage": {
+        "marine_industry": 1900,
+        "fisheries": 900
+      }
+    },
+    {
+      "id": "seaweed",
+      "label": "Seaweed & Macroalgae",
+      "unit": "thousand tonnes",
+      "provision": 520,
+      "usage": {
+        "biotechnology": 380,
+        "fisheries": 140
+      }
+    },
+    {
+      "id": "sand_stone",
+      "label": "Sand & Aggregates",
+      "unit": "million cubic meters",
+      "provision": 22,
+      "usage": {
+        "energy_minerals": 18,
+        "marine_industry": 4
+      }
+    },
+    {
+      "id": "energy",
+      "label": "Renewable Marine Energy",
+      "unit": "GWh",
+      "provision": 52,
+      "usage": {
+        "energy_minerals": 45,
+        "others": 7
+      }
+    },
+    {
+      "id": "salt",
+      "label": "Salt & Minerals",
+      "unit": "thousand tonnes",
+      "provision": 185,
+      "usage": {
+        "chemical_industry": 150,
+        "food_processing": 35
+      }
+    }
+  ],
+  "clusters": {
+    "marine_industry": "Marine Industries",
+    "fisheries": "Fisheries & Aquaculture",
+    "energy_minerals": "Energy & Minerals",
+    "biotechnology": "Biotechnology",
+    "chemical_industry": "Chemical & Pharma",
+    "food_processing": "Food Processing",
+    "others": "Other uses"
+  },
+  "metadata": {
+    "dataSource": "Ministry of Marine Affairs 2023 Annual Report",
+    "notes": "Units vary by resource type; provision estimates based on production surveys"
+  }
+}
