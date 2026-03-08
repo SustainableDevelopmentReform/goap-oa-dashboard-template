@@ -70,6 +70,17 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### 4. Deploy App to the Web
+
+There are multiple options for deploying the app online - there's services within the major cloud infrasturcutre providers (e.g. Amazon AWS, Google GCS, Microsoft Azure) as well as wrapper services more foucsed on deployment (e.g. Cloudflare, Netlify). These can be deployments of a one-off version of the app (manual), or you can link them to a git repository and have one or more branches automatically built and deployed when they change (or tirggered by changes to specific parts of the app).  
+
+Here is an example of this repo deployed to an AWS Amplify app:
+1. Create a new Amplify app (in this case _deployed from a git provider_)
+2. The app is linked to the Github repo (read-only access) and deployed to an [Amplify domain](https://main.dteuwauwltb8g.amplifyapp.com/), and will rebuild anytime changes are made to this repo
+3. Further customisation could be added if required like security and custom domains
+
+It's good practice to have at least two branches, where one branch (e.g. _dev_) is used to push, deploy and test, before the changes are pushed and deployed for the production version online (e.g. _main_ branch connected to the custom domain).  
+
 ## 📁 Project Structure
 
 ```
