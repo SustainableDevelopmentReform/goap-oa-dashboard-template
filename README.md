@@ -236,7 +236,7 @@ pnpm run validate-data
 
 Comprehensive documentation is available in the `/instructions` directory:
 
-- **[CLAUDE.md](CLAUDE.md)** - Quick reference for AI assistants
+- **[AGENT.md](AGENT.md)** - Quick reference for AI/agentic coding
 - **[fresh_instructions.md](instructions/fresh_instructions.md)** - Project workflow
 - **[build_specifications.md](instructions/build_specifications.md)** - Complete technical specs
 - **[project_plan.md](instructions/project_plan.md)** - Development roadmap
