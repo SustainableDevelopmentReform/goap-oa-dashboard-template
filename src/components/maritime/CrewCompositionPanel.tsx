@@ -34,13 +34,13 @@ export function CrewCompositionPanel({ crewData }: CrewCompositionPanelProps) {
 
       <div className="grid grid-cols-2 gap-3">
         <SummaryCard
-          label="Domestic"
+          label="Core registry"
           value={domesticCrewCount.toLocaleString()}
           helper={`${domesticShare.toFixed(1)}% of crew`}
           tone="blue"
         />
         <SummaryCard
-          label="International"
+          label="Other registries"
           value={Math.max(totalCrew - domesticCrewCount, 0).toLocaleString()}
           helper={`${internationalShare.toFixed(1)}% of crew`}
           tone="slate"
@@ -48,7 +48,7 @@ export function CrewCompositionPanel({ crewData }: CrewCompositionPanelProps) {
       </div>
 
       <div className="space-y-2">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Nationality share</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Registry share</p>
         {nationalityEntries.map(([label, count]) => {
           const share = totalCrew > 0 ? (count / totalCrew) * 100 : 0;
           return (

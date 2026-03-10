@@ -1,8 +1,8 @@
 {
   "areas": [
     {
-      "id": "north-island",
-      "name": "North Island",
+      "id": "alpha-isle",
+      "name": "Alpha Isle",
       "type": "island",
       "ecosystems": {
         "coralReef": 52000,
@@ -17,11 +17,11 @@
         "latitude": -15.5,
         "longitude": 175.2
       },
-      "description": "Largest island with extensive reef systems"
+      "description": "Reference island with extensive reef systems"
     },
     {
-      "id": "south-island",
-      "name": "South Island",
+      "id": "beta-isle",
+      "name": "Beta Isle",
       "type": "island",
       "ecosystems": {
         "coralReef": 45000,
@@ -36,11 +36,11 @@
         "latitude": -16.8,
         "longitude": 175.5
       },
-      "description": "Second largest island with diverse ecosystems"
+      "description": "Mixed-economy island with diverse ecosystems"
     },
     {
-      "id": "east-atoll",
-      "name": "East Atoll",
+      "id": "gamma-atoll",
+      "name": "Gamma Atoll",
       "type": "atoll",
       "ecosystems": {
         "coralReef": 32000,
@@ -55,13 +55,13 @@
         "latitude": -16.2,
         "longitude": 176.5
       },
-      "description": "Remote atoll with pristine coral reefs"
+      "description": "Outer atoll with comparatively intact coral habitat"
     }
   ],
   "social": {
     "lastUpdated": "2025-01-15",
-    "atollId": "central",
-    "atollName": "Central Atoll",
+    "atollId": "alpha-cluster",
+    "atollName": "Alpha Cluster",
     "indicators": [
       {
         "id": "populationSize",
@@ -181,8 +181,8 @@
     "islands": [
       {
         "id": "island-a",
-        "name": "Island A",
-        "atollId": "central",
+        "name": "Islet One",
+        "atollId": "alpha-cluster",
         "population": 620,
         "metrics": {
           "populationSize": { "value": 620, "tier": "low", "iconCount": 1, "percentile": 0.25 },
@@ -215,8 +215,8 @@
       },
       {
         "id": "island-b",
-        "name": "Island B",
-        "atollId": "central",
+        "name": "Islet Two",
+        "atollId": "alpha-cluster",
         "population": 845,
         "metrics": {
           "populationSize": { "value": 845, "tier": "moderate", "iconCount": 2, "percentile": 0.6 },
@@ -249,8 +249,8 @@
       },
       {
         "id": "island-c",
-        "name": "Island C",
-        "atollId": "central",
+        "name": "Islet Three",
+        "atollId": "alpha-cluster",
         "population": 875,
         "metrics": {
           "populationSize": { "value": 875, "tier": "moderate", "iconCount": 2, "percentile": 0.65 },
@@ -282,6 +282,6 @@
         }
       }
     ],
-    "notes": "Generic sample social data for Central Atoll with three islands showing variation in tourism dependence, fishing reliance, and coastal vulnerability."
+    "notes": "Generic sample social data for Alpha Cluster with three component islands showing variation in tourism dependence, fishing reliance, and coastal vulnerability."
   }
 }

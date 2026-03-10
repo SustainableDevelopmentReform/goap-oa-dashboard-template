@@ -65,7 +65,7 @@ if (national.social) {
 ```bash
 # From repository root
 mkdir -p public/data/[country-code]
-# Where [country-code] is ISO 3166-1 alpha-3 (e.g., "fji" for Fiji)
+# Where [country-code] is ISO 3166-1 alpha-3 (e.g., "abc" as a placeholder example)
 ```
 
 #### 1.2 Prepare Core Data Files
@@ -181,8 +181,8 @@ Before proceeding, verify all data is correct:
 # Run data validation against schemas
 pnpm run validate-data [country-code]
 
-# Example for Fiji:
-pnpm run validate-data fji
+# Example placeholder:
+pnpm run validate-data abc
 ```
 
 **Expected Output**:
@@ -213,7 +213,7 @@ pnpm run validate-data fji
 # From main branch
 git checkout -b [country-code]
 # Example:
-git checkout -b fji
+git checkout -b abc
 
 # Confirm you're on the new branch
 git branch
@@ -231,7 +231,7 @@ In the repository root:
 # .env.local (development)
 NEXT_PUBLIC_DATA_PATH=generic
 # or for country deployment:
-# NEXT_PUBLIC_DATA_PATH=fji
+# NEXT_PUBLIC_DATA_PATH=abc
 ```
 
 #### 4.2 Update `next.config.js` (if needed)
@@ -256,7 +256,7 @@ pnpm install
 # Set environment variable
 export NEXT_PUBLIC_DATA_PATH=[country-code]
 # Example:
-export NEXT_PUBLIC_DATA_PATH=fji
+export NEXT_PUBLIC_DATA_PATH=abc
 
 # Start development server
 pnpm run dev
@@ -265,7 +265,7 @@ pnpm run dev
 # In another terminal, run quality checks
 pnpm run lint          # Check code quality
 pnpm run type-check    # Verify TypeScript
-pnpm run validate-data fji  # Validate data
+pnpm run validate-data abc  # Validate data
 pnpm run build         # Test production build
 ```
 
@@ -315,7 +315,7 @@ In AWS Amplify Console:
 1. Go to **App Settings → Environment variables**
 2. Add variable:
    - **Name**: `NEXT_PUBLIC_DATA_PATH`
-   - **Value**: `[country-code]` (e.g., `fji` for Fiji)
+   - **Value**: `[country-code]` (e.g., `abc`)
 3. Save and redeploy
 
 #### 7.2 Configure Build Settings (if needed)
@@ -347,7 +347,7 @@ For country deployments, the validation can be updated:
 
 #### 7.3 Deploy Branch
 
-1. In Amplify Console, connect the country branch (e.g., `fji`)
+1. In Amplify Console, connect the country branch (e.g., `abc`)
 2. Configure branch settings:
    - **Branch**: [country-code]
    - **Environment variables**: Set `NEXT_PUBLIC_DATA_PATH=[country-code]`
@@ -496,7 +496,7 @@ git push origin ntarch
   ...
   "social": {
     "atolls": [
-      { "name": "Central Atoll", "population": 50000, "indicators": [...] }
+      { "name": "Alpha Cluster", "population": 50000, "indicators": [...] }
     ]
   }
 }

@@ -487,35 +487,35 @@ This document outlines the priority-ordered roadmap for building the Generic Oce
 ---
 
 ### Phase 9: Country-Specific Deployment (Phase 7 Original)
-**Goal**: Set up Fiji as first country-specific deployment
+**Goal**: Set up an initial country-specific deployment
 **Priority**: High - First real-world deployment
 
-#### 7.1 Fiji Data Preparation
+#### 7.1 Sample Country Data Preparation
 **Priority: High**
 
-- [ ] Create `public/data/fiji/` directory
-  - Convert Fiji mockup data to new schema
+- [ ] Create `public/data/[country-code]/` directory
+  - Convert sample deployment data to new schema
   - Create all required JSON files
-  - Add fiji_sankey.png to assets
+  - Add deployment-specific assets
   - Validate data structure
 
 #### 7.2 Deployment Configuration
 **Priority: High**
 
-- [ ] Set up Fiji branch
-  - Create `fiji` branch from `main`
-  - Configure data path to use `data/fiji/`
+- [ ] Set up deployment branch
+  - Create a `[country-code]` branch from `main`
+  - Configure data path to use `data/[country-code]/`
   - Update environment variables
 
 - [ ] Pre-deployment validation
-  - Run `pnpm run validate-data` on Fiji data
+  - Run `pnpm run validate-data` on deployment data
   - Run `pnpm run lint` to check code quality
   - Run `pnpm run type-check` for TypeScript errors
   - Run `pnpm run test` to ensure all tests pass
   - Run `pnpm run build` locally to verify build succeeds
 
 - [ ] Deploy to Amplify
-  - Configure Fiji branch deployment
+  - Configure branch deployment
   - Monitor build process and logs
   - Verify all components render correctly
   - Check responsive design on multiple devices
@@ -530,7 +530,7 @@ This document outlines the priority-ordered roadmap for building the Generic Oce
   - Branch management guidelines
   - Troubleshooting common issues
 
-**Deliverable**: Fully functional Fiji dashboard deployment
+**Deliverable**: Fully functional country dashboard deployment
 
 ---
 
@@ -933,7 +933,7 @@ This document outlines the priority-ordered roadmap for building the Generic Oce
 ### Key Review Points
 - After Phase 2: Core dashboard functionality review
 - After Phase 5: Pre-deployment review
-- After Phase 7: Fiji deployment review
+- After Phase 7: Initial deployment review
 - After Phase 8: Production readiness review
 
 ### Quality Assurance

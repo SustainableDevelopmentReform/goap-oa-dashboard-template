@@ -214,7 +214,7 @@ function renderSectionContent({
                 type="text"
                 required
                 className={INPUT_CLASSES}
-                placeholder="e.g. National coral reef extent 2023"
+                placeholder="e.g. Coral reef extent account 2023"
               />
             </FormField>
             <FormField label="Data source type" id="data-source-type" required>
@@ -257,7 +257,7 @@ function renderSectionContent({
                 required
                 rows={3}
                 className={`${INPUT_CLASSES} min-h-[6rem]`}
-                placeholder="Describe the national/subnational regions represented."
+                placeholder="Describe the accounting areas or mapped regions represented."
                 value={geographicCoverageValue}
                 onChange={(event) => onGeographicCoverageChange(event.target.value)}
               />
@@ -341,7 +341,7 @@ function renderSectionContent({
             <FormField
               label="Standards or classifications applied"
               id="standards-applied"
-              description="International/national classifications, coordinate systems, or taxonomies."
+              description="Relevant classifications, coordinate systems, or taxonomies."
             >
               <input
                 id="standards-applied"
@@ -621,7 +621,7 @@ function renderSectionContent({
               name="citationRequirements"
               rows={3}
               className={`${INPUT_CLASSES} min-h-[5rem]`}
-              placeholder="e.g. National Statistics Office (2024). Marine Ecosystem Dataset."
+              placeholder="e.g. Marine Ecosystem Survey Program (2024). Coastal Habitat Dataset."
             />
           </FormField>
           <div className="grid gap-4 md:grid-cols-2">

@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "country": "Generic Island Nation",
+    "country": "Ocean Accounts Template",
     "dataYear": 2024,
     "lastUpdated": "2025-01-15",
-    "source": "National Maritime Authority",
+    "source": "Template Maritime Registry",
     "reportingAcronym": "NMA",
     "notes": "Generic sample maritime data for framework demonstration"
   },
@@ -11,7 +11,7 @@
     "fleetTotal": {
       "value": 42,
       "unit": "vessels",
-      "description": "Total registered vessels in national fleet"
+      "description": "Total registered vessels in the tracked fleet"
     },
     "activeFleet": {
       "value": 38,
@@ -31,7 +31,7 @@
     "domesticCrewShare": {
       "value": 62.5,
       "unit": "%",
-      "description": "Percentage of crew that are national citizens"
+      "description": "Percentage of crew associated with the core registry"
     },
     "averageFleetAge": {
       "value": 11.8,

@@ -161,8 +161,8 @@ Sub-national areas (islands, provinces, marine protected areas) ecosystem data.
 {
   "areas": [
     {
-      "id": "north-island",
-      "name": "North Island",
+      "id": "alpha-isle",
+      "name": "Alpha Isle",
       "type": "island",
       "ecosystems": {
         "coralReef": 45000,
@@ -177,11 +177,11 @@ Sub-national areas (islands, provinces, marine protected areas) ecosystem data.
         "latitude": -15.5,
         "longitude": 175.2
       },
-      "description": "Largest island with extensive reef systems"
+      "description": "Reference island with extensive reef systems"
     },
     {
-      "id": "south-island",
-      "name": "South Island",
+      "id": "beta-isle",
+      "name": "Beta Isle",
       "type": "island",
       "ecosystems": {
         "coralReef": 32000,
@@ -658,8 +658,8 @@ Spatial configuration and GeoJSON boundary data.
         {
           "type": "Feature",
           "properties": {
-            "id": "north-island",
-            "name": "North Island"
+            "id": "alpha-isle",
+            "name": "Alpha Isle"
           },
           "geometry": {
             "type": "Polygon",

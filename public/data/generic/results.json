@@ -20,8 +20,8 @@
   "pilots": [
     {
       "id": "pilot-001",
-      "name": "Northern Province Mangrove Restoration",
-      "areaId": "north-01",
+      "name": "Alpha Isle Mangrove Restoration",
+      "areaId": "alpha-isle",
       "readinessStage": "paying",
       "readinessNote": "Transition to annual payment cycle Q1 2025",
       "instrument": {
@@ -29,7 +29,7 @@
         "capitalSource": "Climate Adaptation Fund",
         "capitalAmount": "$2.8M",
         "privacy": "public",
-        "governance": "Regional government + Conservation NGO partnership",
+        "governance": "Program office + conservation delivery partner",
         "description": "Performance-linked payments for mangrove restoration and carbon sequestration"
       },
       "nbSolutionFocus": ["Nature-based solutions", "Climate mitigation", "Coastal protection"],
@@ -94,14 +94,14 @@
         "status": "Pending trigger verification for Q1 2025 payment",
         "evidenceRequired": "Satellite verification + Q4 2024 audit report"
       },
-      "partners": ["Environmental Ministry", "Regional Government", "Conservation International"],
-      "communities": ["Northern Province coastal communities"],
-      "replication": ["Southern Province (pipeline 2025)", "Eastern Region (planned 2026)"]
+      "partners": ["Ocean Program Office", "Implementation Partner", "Conservation Partner"],
+      "communities": ["Alpha Isle shoreline communities"],
+      "replication": ["Beta Isle (pipeline 2025)", "Gamma Atoll (planned 2026)"]
     },
     {
       "id": "pilot-002",
-      "name": "Island Fisheries Sustainability Fund",
-      "areaId": "island-central",
+      "name": "Beta Isle Fisheries Sustainability Fund",
+      "areaId": "beta-isle",
       "readinessStage": "triggers-defined",
       "readinessNote": "Baseline data collection 80% complete; payment window Q3 2025",
       "instrument": {
@@ -109,7 +109,7 @@
         "capitalSource": "World Bank Blue Economy Fund",
         "capitalAmount": "$1.5M",
         "privacy": "masked",
-        "governance": "Fishing cooperative + Fisheries Ministry",
+        "governance": "Fishing cooperative + marine program office",
         "description": "Incentivise sustainable fishing practices through performance-based compensation"
       },
       "nbSolutionFocus": ["Sustainable fisheries", "Livelihood improvement"],
@@ -151,8 +151,8 @@
           "status": "achieved"
         }
       ],
-      "partners": ["Fisheries Ministry", "Island Fishing Cooperative"],
-      "communities": ["Central Island fishing community"]
+      "partners": ["Marine Program Office", "Fishing Cooperative"],
+      "communities": ["Beta Isle fishing community"]
     }
   ]
 }

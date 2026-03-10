@@ -8,12 +8,10 @@ import type { EcosystemServiceGroup, EcosystemServicesData } from "@/types";
 
 interface NationalEcosystemServicesAccountProps {
   services?: EcosystemServicesData;
-  countryName: string;
 }
 
 export function NationalEcosystemServicesAccount({
   services,
-  countryName,
 }: NationalEcosystemServicesAccountProps) {
   const ecosystems = useMemo(
     () => normalizeServiceGroups(services?.ecosystems),
@@ -45,15 +43,15 @@ export function NationalEcosystemServicesAccount({
     <section className="flex flex-col gap-6 rounded-[1.5rem] border border-slate-200/70 bg-white/80 p-6 shadow-sm">
       <header className="space-y-2">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-          National Ecosystem Services Account
+          Ecosystem Services Account
         </p>
         <div className="flex flex-col gap-1">
           <h2 className="text-3xl font-semibold text-slate-900">
-            Services value across all provinces
+            Services value across ecosystem types
           </h2>
           <p className="text-sm text-slate-600">
-            {countryName}&apos;s ecosystem services account compares indicators across ecosystems
-            and years available in the dataset.
+            Compare ecosystem service indicators across ecosystem types and years available in the
+            template dataset.
           </p>
         </div>
       </header>

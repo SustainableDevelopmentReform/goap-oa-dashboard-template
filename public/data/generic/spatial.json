@@ -13,7 +13,7 @@
   "national": {
     "type": "Feature",
     "properties": {
-      "name": "Generic Island Nation",
+      "name": "Ocean Accounts Template",
       "area_km2": 18272,
       "population": 900000
     },
@@ -50,8 +50,8 @@
       {
         "type": "Feature",
         "properties": {
-          "id": "north-island",
-          "name": "North Island",
+          "id": "alpha-isle",
+          "name": "Alpha Isle",
           "area_km2": 400
         },
         "geometry": {
@@ -71,8 +71,8 @@
       {
         "type": "Feature",
         "properties": {
-          "id": "south-island",
-          "name": "South Island",
+          "id": "beta-isle",
+          "name": "Beta Isle",
           "area_km2": 5000
         },
         "geometry": {
@@ -96,8 +96,8 @@
       {
         "type": "Feature",
         "properties": {
-          "id": "east-atoll",
-          "name": "East Atoll",
+          "id": "gamma-atoll",
+          "name": "Gamma Atoll",
           "area_km2": 350
         },
         "geometry": {
@@ -124,33 +124,33 @@
   "locations": [
     {
       "id": "capital",
-      "name": "Capital City",
+      "name": "Administrative Hub",
       "type": "capital",
       "coordinates": {
         "latitude": -18.12,
         "longitude": 178.44
       },
-      "description": "National capital and largest city"
+      "description": "Administrative center and primary service hub"
     },
     {
       "id": "study-site-1",
-      "name": "Marine Reserve Alpha",
+      "name": "Reference Site One",
       "type": "study-site",
       "coordinates": {
         "latitude": -17.96,
         "longitude": 179.24
       },
-      "description": "Primary research and monitoring site"
+      "description": "Primary monitoring and demonstration site"
     },
     {
       "id": "study-site-2",
-      "name": "Coastal Research Station",
+      "name": "Observation Site Two",
       "type": "study-site",
       "coordinates": {
         "latitude": -16.46,
         "longitude": 179.02
       },
-      "description": "Long-term ecological monitoring station"
+      "description": "Secondary long-term ecological monitoring site"
     }
   ],
   "geeApp": {

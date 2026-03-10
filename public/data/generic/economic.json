@@ -6,7 +6,7 @@
     "oceanGdpContribution": {
       "value": 25,
       "unit": "percent",
-      "description": "Ocean sectors contribution to national GDP"
+      "description": "Ocean-linked sectors as a share of total GDP"
     },
     "tourismRevenue": {
       "value": 486,
@@ -69,7 +69,7 @@
     }
   ],
   "metadata": {
-    "dataSource": "National Statistics Office Economic Survey 2024",
+    "dataSource": "Template Economic Survey 2024",
     "methodology": "System of National Accounts (SNA) classification with ocean-specific adjustments",
     "notes": "Values adjusted for inflation to 2024 USD"
   },

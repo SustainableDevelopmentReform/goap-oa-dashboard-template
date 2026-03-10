@@ -1,6 +1,6 @@
 {
-  "countryName": "Generic Island Nation",
-  "countryCode": "GEN",
+  "countryName": "Ocean Accounts Template",
+  "countryCode": "TMP",
   "lastUpdated": "2025-01-15",
   "ecosystems": {
     "coralReef": 150000,
@@ -12,7 +12,7 @@
     "other": null
   },
   "metadata": {
-    "dataSource": "National Marine Survey 2024",
+    "dataSource": "Template Marine Survey 2024",
     "methodology": "Satellite remote sensing with ground validation",
     "referenceYear": 2024,
     "spatialResolution": "10m",
@@ -103,7 +103,7 @@
       }
     ],
     "metadata": {
-      "dataSource": "National Ocean Accounting Office 2023",
+      "dataSource": "Ocean Accounts Program Office 2023",
       "methodology": "Satellite analysis for extent, hedonic pricing for ecosystem service values",
       "notes": "Values in 2021 USD constant prices"
     }
@@ -173,13 +173,13 @@
       "others": "Other uses"
     },
     "metadata": {
-      "dataSource": "Ministry of Marine Affairs 2023 Annual Report",
+      "dataSource": "Marine Affairs Program Annual Report 2023",
       "notes": "Units vary by resource type; provision estimates based on production surveys"
     }
   },
   "social": {
     "lastUpdated": "2025-01-15",
-    "spotlightAtollId": "central",
+    "spotlightAtollId": "alpha-cluster",
     "indicators": [
       {
         "id": "populationSize",
@@ -256,8 +256,8 @@
     ],
     "atolls": [
       {
-        "id": "central",
-        "name": "Central Atoll",
+        "id": "alpha-cluster",
+        "name": "Alpha Cluster",
         "isSpotlight": true,
         "population": 2340,
         "metrics": {
@@ -272,8 +272,8 @@
         }
       },
       {
-        "id": "northern",
-        "name": "Northern Atoll",
+        "id": "beta-cluster",
+        "name": "Beta Cluster",
         "isSpotlight": false,
         "population": 1850,
         "metrics": {
@@ -288,8 +288,8 @@
         }
       },
       {
-        "id": "southern",
-        "name": "Southern Atoll",
+        "id": "gamma-cluster",
+        "name": "Gamma Cluster",
         "isSpotlight": false,
         "population": 2120,
         "metrics": {
@@ -304,6 +304,6 @@
         }
       }
     ],
-    "notes": "Generic national social data with three atolls showing variation in tourism reliance, fishing dependence, and coastal vulnerability."
+    "notes": "Generic social data with three fictional atoll clusters showing variation in tourism reliance, fishing dependence, and coastal vulnerability."
   }
 }

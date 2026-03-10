@@ -729,7 +729,7 @@ export function MapViewer({ spatial, subnational, initialAreaId }: MapViewerProp
           layers={[
             {
               id: "subnational",
-              label: "Sub-national boundaries",
+              label: "Accounting area boundaries",
               checked: showSubnational,
               onToggle: setShowSubnational,
               type: "boundary",

@@ -17,7 +17,7 @@ export function NationalEcosystemAccount({ national }: NationalEcosystemAccountP
     <section className="flex flex-col gap-8 rounded-[1.5rem] border border-slate-200/70 bg-white/80 p-6 shadow-sm">
       <header className="space-y-2">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-          National Ecosystem Extent Account
+          Ecosystem Extent Account
         </p>
         <div className="flex flex-col gap-1">
           <h2 className="text-3xl font-semibold text-slate-900">Ocean Ecosystem Extent</h2>
@@ -30,7 +30,7 @@ export function NationalEcosystemAccount({ national }: NationalEcosystemAccountP
       <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
         <EcosystemDonutChart
           ecosystems={national.ecosystems}
-          subtitle="National distribution across ecosystem classes"
+          subtitle="Distribution across ecosystem classes in the template dataset"
         />
         <div className="grid gap-4 sm:grid-cols-2">
           {FEATURED_ECOSYSTEMS.map((ecosystem) => (

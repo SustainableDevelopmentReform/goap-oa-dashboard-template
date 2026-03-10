@@ -66,7 +66,7 @@ export function EcosystemDonutChart({
           role="img"
           viewBox={`0 0 ${SIZE} ${SIZE}`}
           className="mx-auto h-64 w-64"
-          aria-label="Distribution of national ecosystem extent"
+          aria-label="Distribution of ecosystem extent"
         >
           <g transform={`translate(${RADIUS}, ${RADIUS})`}>
             {arcs.map((arc) => {

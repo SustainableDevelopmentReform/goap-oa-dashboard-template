@@ -6,7 +6,6 @@ import {
   loadNarrativeData,
   loadSpatialConfig,
   loadSubnationalData,
-  loadNationalData,
 } from "@/lib/dataLoader";
 
 export const metadata = {
@@ -20,12 +19,11 @@ export default async function ResultsTrackingPage({
 }: {
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-  const [results, narrative, spatial, subnational, national] = await Promise.all([
+  const [results, narrative, spatial, subnational] = await Promise.all([
     loadResultsData(),
     loadNarrativeData(),
     loadSpatialConfig(),
     loadSubnationalData(),
-    loadNationalData(),
   ]);
 
   const resolvedSearchParams = searchParams ? await searchParams : undefined;
@@ -40,7 +38,6 @@ export default async function ResultsTrackingPage({
           results={results}
           spatial={spatial}
           subnational={subnational}
-          countryName={national.countryName}
           initialPilotId={pilotParam}
         />
       </main>

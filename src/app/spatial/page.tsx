@@ -49,10 +49,9 @@ export default async function SpatialPage({
                 Spatial Insights
               </h1>
               <p className="max-w-2xl text-base leading-relaxed text-slate-600">
-                Explore national and sub-national marine accounting areas with an
-                interactive MapLibre GL JS map, and dive deeper through an embedded
-                Google Earth Engine experience for temporal change analysis and
-                interactive layers.
+                Explore mapped ocean accounting areas with an interactive MapLibre GL JS map, and
+                dive deeper through an embedded Google Earth Engine experience for temporal change
+                analysis and interactive layers.
               </p>
               <div className="flex flex-wrap gap-2 text-xs font-semibold text-primary">
                 <Link

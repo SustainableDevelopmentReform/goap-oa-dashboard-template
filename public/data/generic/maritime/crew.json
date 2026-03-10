@@ -1,17 +1,17 @@
 {
   "crew": [
-    {"id": "c001", "rank": "Master", "nationality": "GEN", "certifications": ["STCW Master"], "status": "active"},
-    {"id": "c002", "rank": "Chief Officer", "nationality": "GEN", "certifications": ["STCW Officer"], "status": "active"},
-    {"id": "c003", "rank": "Second Officer", "nationality": "Regional", "certifications": ["STCW Officer"], "status": "active"},
-    {"id": "c004", "rank": "Third Officer", "nationality": "Regional", "certifications": ["STCW Officer"], "status": "active"},
-    {"id": "c005", "rank": "Chief Engineer", "nationality": "GEN", "certifications": ["STCW Engineer"], "status": "active"},
-    {"id": "c006", "rank": "Second Engineer", "nationality": "Regional", "certifications": ["STCW Engineer"], "status": "active"},
-    {"id": "c007", "rank": "Boatswain", "nationality": "GEN", "certifications": [], "status": "active"},
-    {"id": "c008", "rank": "Able Seaman", "nationality": "Regional", "certifications": [], "status": "active"},
-    {"id": "c009", "rank": "Ordinary Seaman", "nationality": "Regional", "certifications": [], "status": "active"},
-    {"id": "c010", "rank": "Mess Attendant", "nationality": "Regional", "certifications": [], "status": "active"},
-    {"id": "c011", "rank": "Electrician", "nationality": "GEN", "certifications": ["Electrical Safety"], "status": "active"},
-    {"id": "c012", "rank": "Fitter", "nationality": "Regional", "certifications": [], "status": "active"}
+    {"id": "c001", "rank": "Master", "nationality": "Core Registry", "certifications": ["STCW Master"], "status": "active"},
+    {"id": "c002", "rank": "Chief Officer", "nationality": "Core Registry", "certifications": ["STCW Officer"], "status": "active"},
+    {"id": "c003", "rank": "Second Officer", "nationality": "Partner Registry", "certifications": ["STCW Officer"], "status": "active"},
+    {"id": "c004", "rank": "Third Officer", "nationality": "Partner Registry", "certifications": ["STCW Officer"], "status": "active"},
+    {"id": "c005", "rank": "Chief Engineer", "nationality": "Core Registry", "certifications": ["STCW Engineer"], "status": "active"},
+    {"id": "c006", "rank": "Second Engineer", "nationality": "Partner Registry", "certifications": ["STCW Engineer"], "status": "active"},
+    {"id": "c007", "rank": "Boatswain", "nationality": "Core Registry", "certifications": [], "status": "active"},
+    {"id": "c008", "rank": "Able Seaman", "nationality": "Partner Registry", "certifications": [], "status": "active"},
+    {"id": "c009", "rank": "Ordinary Seaman", "nationality": "Partner Registry", "certifications": [], "status": "active"},
+    {"id": "c010", "rank": "Mess Attendant", "nationality": "Partner Registry", "certifications": [], "status": "active"},
+    {"id": "c011", "rank": "Electrician", "nationality": "Core Registry", "certifications": ["Electrical Safety"], "status": "active"},
+    {"id": "c012", "rank": "Fitter", "nationality": "Partner Registry", "certifications": [], "status": "active"}
   ],
   "rankDistribution": {
     "Master": 10,
@@ -22,12 +22,12 @@
     "Support": 191
   },
   "nationalityBreakdown": {
-    "Domestic": 472,
-    "International": 284
+    "Core Registry": 472,
+    "Partner Registry": 284
   },
   "metadata": {
     "totalCrewCount": 756,
     "lastUpdated": "2025-01-15",
-    "source": "National Maritime Authority"
+    "source": "Template Maritime Registry"
   }
 }

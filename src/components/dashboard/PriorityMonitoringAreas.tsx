@@ -132,7 +132,7 @@ export function PriorityMonitoringAreas({
                 </div>
               ) : (
                 <div className="rounded-2xl border border-dashed border-slate-200 bg-white/70 px-4 py-3 text-sm text-slate-500">
-                  Link this monitoring site to a mapped sub-national area to surface
+                  Link this monitoring site to a mapped accounting area to surface
                   ecosystem extent statistics.
                 </div>
               )}

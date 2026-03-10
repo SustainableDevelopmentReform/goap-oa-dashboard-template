@@ -26,7 +26,7 @@ export function HeroSection({ national, introduction }: HeroSectionProps) {
             <span className="rounded-full border border-primary/50 px-3 py-1 text-xs tracking-wide text-primary">
               Beta
             </span>
-            <span>{national.countryCode} • Ocean Accounts Dashboard</span>
+            <span>GOAP • Ocean Accounts Dashboard</span>
           </div>
           <h1 className="text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
             {introduction.title}
@@ -39,7 +39,7 @@ export function HeroSection({ national, introduction }: HeroSectionProps) {
         </div>
         <div className="flex min-w-[240px] flex-col gap-4 rounded-2xl border border-primary/30 bg-primary-soft/60 p-6 text-sm text-slate-700">
           <span className="text-xs font-semibold uppercase tracking-wide text-primary">
-            National Ecosystem Extent
+            Ecosystem Extent Snapshot
           </span>
           <span className="text-3xl font-semibold text-slate-900">
             {formatNumber(totalArea, { maximumFractionDigits: 0 })} ha

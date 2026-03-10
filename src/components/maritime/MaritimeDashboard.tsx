@@ -81,7 +81,7 @@ const buildScopeAwareKpis = (
     domesticCrewShare: {
       ...(base.domesticCrewShare ?? {
         unit: "%",
-        description: "Domestic crew share in selected scope",
+        description: "Core-registry crew share in selected scope",
       }),
       value: crewTotal > 0 ? (domesticCrewTotal / crewTotal) * 100 : 0,
     },
@@ -151,7 +151,7 @@ export function MaritimeDashboard({
                 scope === "domestic" ? "bg-white text-primary shadow-sm" : "text-slate-600"
               }`}
             >
-              Domestic
+              Core registry
             </button>
           </div>
         </div>
@@ -213,7 +213,7 @@ export function MaritimeDashboard({
 
       <div className="mt-8 rounded bg-slate-100 p-4 text-sm text-slate-600">
         <p>
-          <strong>Data year:</strong> {overview.metadata.dataYear} | <strong>Country:</strong>{" "}
+          <strong>Data year:</strong> {overview.metadata.dataYear} | <strong>Dataset:</strong>{" "}
           {overview.metadata.country}
         </p>
       </div>

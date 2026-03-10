@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GOAP Ocean Accounts Dashboard",
     description:
-      "A generic, configurable Next.js framework for delivering national ocean accounts dashboards.",
+      "A generic, configurable Next.js framework for delivering ocean accounts dashboards.",
     type: "website",
   },
 };

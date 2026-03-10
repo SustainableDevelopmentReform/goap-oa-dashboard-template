@@ -1,14 +1,14 @@
 {
   "introduction": {
-    "title": "Generic Island Nation Ocean Accounts",
-    "content": "**Ocean Accounts** provide a systematic approach to measuring and valuing marine ecosystems, enabling evidence-based decision-making for sustainable ocean management. This dashboard demonstrates the GOAP Spatial Data Framework's capability to integrate diverse marine data sources, ensuring full-chain transparency and reproducibility aligned with global statistical standards.\n\nOur modular architecture supports national statistics, sustainable finance, climate response, and marine spatial planning while maintaining operational efficiency through cloud-based services.",
+    "title": "Ocean Accounts Dashboard Template",
+    "content": "**Ocean Accounts** provide a systematic approach to measuring and valuing marine ecosystems, enabling evidence-based decision-making for sustainable ocean management. This dashboard demonstrates the GOAP Spatial Data Framework's capability to integrate diverse marine data sources, ensuring full-chain transparency and reproducibility aligned with global statistical standards.\n\nThe modular architecture supports ocean accounting workflows, sustainable finance, climate response, and marine spatial planning while maintaining operational efficiency through cloud-based services.",
     "lastUpdated": "2025-01-15"
   },
   "sections": [
     {
       "id": "economic-flow",
       "title": "Economic Dependencies Flow",
-      "content": "This analysis illustrates how our national economy, categorized by System of National Accounts (SNA) International Standard Industrial Classification (ISIC) sectors, depends on global ocean ecosystem topology classes. The flow diagram demonstrates the interconnections between marine natural capital and economic activities, highlighting the critical role of ocean ecosystems in supporting various industries and livelihoods across the nation.",
+      "content": "This analysis illustrates how an ocean-linked economy, categorized by System of National Accounts (SNA) International Standard Industrial Classification (ISIC) sectors, depends on global ocean ecosystem topology classes. The flow diagram demonstrates the interconnections between marine natural capital and economic activities, highlighting the critical role of ocean ecosystems in supporting diverse industries and livelihoods across the accounting system.",
       "order": 1,
       "images": [
         {
@@ -22,21 +22,21 @@
     {
       "id": "methodology",
       "title": "Data Sources and Methodology",
-      "content": "Ocean ecosystem extent data derived from high-resolution satellite remote sensing (10m resolution) combined with comprehensive ground-truth validation surveys. Economic indicators sourced from National Statistics Office using the System of National Accounts (SNA) framework with ocean-specific adjustments following SEEA Ecosystem Accounting guidelines.\n\nTemporal trends compiled from historical aerial surveys (1990-2000), satellite imagery analysis (2000-present), and field observations. All data undergoes rigorous quality control and validation processes to ensure accuracy and reliability.",
+      "content": "Ocean ecosystem extent data derived from high-resolution satellite remote sensing (10m resolution) combined with comprehensive ground-truth validation surveys. Economic indicators sourced from a template statistical program using the System of National Accounts (SNA) framework with ocean-specific adjustments following SEEA Ecosystem Accounting guidelines.\n\nTemporal trends compiled from historical aerial surveys (1990-2000), satellite imagery analysis (2000-present), and field observations. All data undergoes rigorous quality control and validation processes to ensure accuracy and reliability.",
       "order": 3,
       "images": []
     },
     {
       "id": "future-outlook",
       "title": "Conservation and Future Outlook",
-      "content": "[Placeholder] Use this space to highlight country- or jurisdiction-specific conservation stories, priorities, and calls to action.\n\nRecent trends show encouraging signs of mangrove recovery following conservation initiatives, while seagrass meadows continue to face pressures from coastal development and water quality changes. Coral reef ecosystems show concerning decline after 2015 due to thermal stress events.\n\nOngoing monitoring and adaptive management strategies are essential to maintain the health of these critical ecosystems that support our economy and food security.",
+      "content": "[Placeholder] Use this space to highlight dataset-specific conservation stories, priorities, and calls to action.\n\nRecent trends show encouraging signs of mangrove recovery following conservation initiatives, while seagrass meadows continue to face pressures from coastal development and water quality changes. Coral reef ecosystems show concerning decline after 2015 due to thermal stress events.\n\nOngoing monitoring and adaptive management strategies are essential to maintain the health of these critical ecosystems that support ocean-linked livelihoods and food security.",
       "order": 2,
       "images": []
     }
   ],
   "footer": {
     "attribution": "Global Ocean Accounts Partnership (GOAP) Spatial Data Framework",
-    "dataSourceCitation": "National Marine Survey (2024), National Statistics Office (2024), SEEA Ecosystem Accounting Framework",
+    "dataSourceCitation": "Template Marine Survey (2024), Template Economic Survey (2024), SEEA Ecosystem Accounting Framework",
     "contactInfo": "For more information, visit goap.org"
   }
 }

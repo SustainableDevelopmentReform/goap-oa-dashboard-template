@@ -52,7 +52,7 @@ export default async function Home({
 
         <EconomicHighlights economic={economic} />
 
-        <NationalEcosystemServicesAccount services={national.ecosystemServices} countryName={national.countryName} />
+        <NationalEcosystemServicesAccount services={national.ecosystemServices} />
 
         <NaturalCapitalSection naturalCapital={national.naturalCapital} />
 

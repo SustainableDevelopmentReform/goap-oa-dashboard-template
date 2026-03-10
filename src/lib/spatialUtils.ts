@@ -30,7 +30,7 @@ const normalizeId = (value: unknown): string | null => {
  * auto-assigned numeric IDs from MapLibre.
  */
 export const getFeatureId = (feature: PolygonFeature): string | null => {
-  // IMPORTANT: Prefer properties.id (our semantic IDs like "north-island")
+  // IMPORTANT: Prefer properties.id (our semantic IDs like "alpha-isle")
   // over feature.id (MapLibre's auto-assigned numeric 0, 1, 2...)
   const fromProps = normalizeId(feature.properties?.id);
   if (fromProps) {

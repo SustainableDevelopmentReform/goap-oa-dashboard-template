@@ -36,7 +36,7 @@ Generic Framework → Data Configuration → Country Deployment
 ```
 
 - **Main Branch**: Contains generic framework code
-- **Country Branches**: e.g., `fiji` branch with country-specific data
+- **Country Branches**: e.g., `example-country` branch with country-specific data
 - **Deployment**: Each country branch deployed separately via AWS Amplify
 
 ## 📋 Prerequisites
@@ -273,7 +273,7 @@ frontend:
 ### Environment Variables
 
 Set in Amplify console per deployment:
-- `NEXT_PUBLIC_DATA_PATH` - Data directory path (e.g., "fiji", "generic")
+- `NEXT_PUBLIC_DATA_PATH` - Data directory path (e.g., "example-country", "generic")
 - Additional variables as needed
 
 ## 🎨 Design System

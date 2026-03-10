@@ -78,7 +78,7 @@ The Global Ocean Accounts Partnership (GOAP) Spatial Data Framework dashboard is
 │   │   │   ├── economic.json
 │   │   │   ├── narrative.json
 │   │   │   └── spatial.json
-│   │   └── [country-code]/             # Country-specific data (e.g., fiji/)
+│   │   └── [country-code]/             # Country-specific data (e.g., example-country/)
 │   │       ├── national.json
 │   │       ├── subnational.json
 │   │       ├── timeseries.json
@@ -102,7 +102,7 @@ The Global Ocean Accounts Partnership (GOAP) Spatial Data Framework dashboard is
 The application determines which dataset to load based on an environment variable or configuration file:
 
 - **Development**: Uses `data/generic/` by default
-- **Production**: Configured per deployment (e.g., `data/fiji/`)
+- **Production**: Configured per deployment (e.g., `data/example-country/`)
 - **Data Path**: Specified in `next.config.js` or `.env` file
 
 ## 3. Implementation Phases Summary
@@ -350,7 +350,7 @@ All features below are organized by implementation phase (Phases 1-7). Features 
 #### 3.9.4 Cross-Dateline Coordinate Handling
 - **Problem**: Geometries crossing the 180° meridian (International Date Line) render as split polygons in MapLibre
 - **Solution**: `normalizeGeometryCoordinates()` utility wraps coordinates from [-180, 180] to [0, 360] range
-- **Use Cases**: Pacific island nations (Fiji, Maldives, Solomons), New Zealand, etc.
+- **Use Cases**: Archipelagic states, small-island jurisdictions, and coastal nations spanning the 180° meridian
 - **Implementation**: Recursive normalization of all coordinate arrays in GeoJSON features
 
 #### 3.9.5 Raster Utilities Library

@@ -1,9 +1,9 @@
 {
   "ports": [
     {
-      "id": "port-honiara",
-      "name": "Port Honiara",
-      "country": "Generic Island Nation",
+      "id": "port-alpha",
+      "name": "Harbor Alpha",
+      "country": "Ocean Accounts Template",
       "arrivals": 234,
       "departures": 234,
       "cargoVolume": 125000,
@@ -18,9 +18,9 @@
       }
     },
     {
-      "id": "port-gizo",
-      "name": "Port Gizo",
-      "country": "Generic Island Nation",
+      "id": "port-beta",
+      "name": "Harbor Beta",
+      "country": "Ocean Accounts Template",
       "arrivals": 156,
       "departures": 156,
       "cargoVolume": 68000,
@@ -34,9 +34,9 @@
       }
     },
     {
-      "id": "port-tulagi",
-      "name": "Port Tulagi",
-      "country": "Generic Island Nation",
+      "id": "port-gamma",
+      "name": "Harbor Gamma",
+      "country": "Ocean Accounts Template",
       "arrivals": 98,
       "departures": 98,
       "cargoVolume": 45000,
@@ -58,7 +58,7 @@
     {"month": "Jun", "arrivals": 268, "departures": 268, "cargo": 135000}
   ],
   "metadata": {
-    "country": "Generic Island Nation",
+    "country": "Ocean Accounts Template",
     "dataYear": 2024,
     "lastUpdated": "2025-01-15"
   }

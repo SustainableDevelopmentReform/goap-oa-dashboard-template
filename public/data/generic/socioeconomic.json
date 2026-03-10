@@ -1,7 +1,7 @@
 {
   "lastUpdated": "2025-01-15",
-  "atollId": "central",
-  "atollName": "Central Atoll",
+  "atollId": "alpha-cluster",
+  "atollName": "Alpha Cluster",
   "indicators": [
     {
       "id": "populationSize",
@@ -161,8 +161,8 @@
   "islands": [
     {
       "id": "island-a",
-      "name": "Island A",
-      "atollId": "central",
+      "name": "Islet One",
+      "atollId": "alpha-cluster",
       "population": 620,
       "metrics": {
         "populationSize": {
@@ -239,8 +239,8 @@
     },
     {
       "id": "island-b",
-      "name": "Island B",
-      "atollId": "central",
+      "name": "Islet Two",
+      "atollId": "alpha-cluster",
       "population": 845,
       "metrics": {
         "populationSize": {
@@ -317,8 +317,8 @@
     },
     {
       "id": "island-c",
-      "name": "Island C",
-      "atollId": "central",
+      "name": "Islet Three",
+      "atollId": "alpha-cluster",
       "population": 875,
       "metrics": {
         "populationSize": {
@@ -394,5 +394,5 @@
       }
     }
   ],
-  "notes": "Generic sample social data representing a central atoll with three islands showing variation in tourism dependence, fishing reliance, and coastal vulnerability."
+  "notes": "Generic sample social data representing Alpha Cluster with three component islands showing variation in tourism dependence, fishing reliance, and coastal vulnerability."
 }

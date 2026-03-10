@@ -22,7 +22,6 @@ interface ResultsTrackingContentProps {
   results: ResultsData | null;
   spatial: SpatialConfig;
   subnational: SubnationalData;
-  countryName: string;
   initialPilotId?: string | null;
 }
 
@@ -96,7 +95,6 @@ export function ResultsTrackingContent({
   results,
   spatial,
   subnational,
-  countryName,
   initialPilotId,
 }: ResultsTrackingContentProps) {
   const pilots = useMemo(() => results?.pilots ?? [], [results]);
@@ -174,7 +172,7 @@ export function ResultsTrackingContent({
             </div>
             <div className="flex flex-col gap-2">
               <h1 className="text-3xl font-semibold text-slate-900">
-                {countryName} results tracking
+                Ocean accounts results tracking
               </h1>
               <p className="max-w-3xl text-base leading-relaxed text-slate-600">
                 {results.intro.summary}
