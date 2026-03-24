@@ -15,6 +15,7 @@ The GOAP Spatial Data Framework dashboard is a **generic framework** designed fo
 ## Agentic coding workflow
 - **The `instructions/` directory is your first touchpoint for a native and natural LLM driven pathway for understanding, modifying and implementing your version of this dashboard.**
 - ` instructions/AGENT.md` is analogous to `AGENTS.md` or `CLAUDE.md` that you might find and use with _Codex_ and/or _Claude Code_ and is a good starting point for developing your own workflow.
+- [`LLM_QUICKSTART.md`](LLM_QUICKSTART.md) is a practical technical guide for setting up an IDE and Git workflow, installing a coding agent, using prompts to choose components and wrangle data, and managing iterative country-specific dashboard sessions.
 - An agentic workflow can include adding/removing/modifying features, adding data, adding countries etc.
 
 
