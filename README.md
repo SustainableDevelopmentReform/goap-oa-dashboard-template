@@ -12,15 +12,7 @@ All data in this generic dashboard are fabricated and examples only, even if the
 
 The GOAP Spatial Data Framework dashboard is a **generic framework** designed for country/jurisdiction-specific deployments. All functionality is built generically and configured through JSON data files—no code changes required for new country deployments.
 
-## Agentic coding workflow
-- **The `instructions/` directory is your first touchpoint for a native and natural LLM driven pathway for understanding, modifying and implementing your version of this dashboard.**
-- ` instructions/AGENT.md` is analogous to `AGENTS.md` or `CLAUDE.md` that you might find and use with _Codex_ and/or _Claude Code_ and is a good starting point for developing your own workflow.
-- [`LLM_QUICKSTART.md`](LLM_QUICKSTART.md) is a practical technical guide for setting up an IDE and Git workflow, installing a coding agent, using prompts to choose components and wrangle data, and managing iterative country-specific dashboard sessions.
-- An agentic workflow can include adding/removing/modifying features, adding data, adding countries etc.
-
-
 ### Key Features
-
 - 📊 **Interactive Visualizations** - D3.js-powered charts for ecosystem extent, trends, and economic data
 - 🗺️ **Spatial Mapping** - MapLibre GL JS map with national/sub-national overlays, monitoring-site markers, and bidirectional deep links to dashboard analytics
 - 📍 **Priority Monitoring Sites** - Dashboard cards and spatial popups enriched with site descriptions, ecosystem stats, and mini donut previews
@@ -29,6 +21,12 @@ The GOAP Spatial Data Framework dashboard is a **generic framework** designed fo
 - 🎨 **Modern UI** - Clean, professional design with Tailwind CSS
 - ♿ **Accessible** - WCAG 2.1 Level AA compliance
 - 🚀 **Fast** - Optimized Next.js builds with excellent performance
+
+## Agentic coding workflow
+- **The `instructions/` directory is your first touchpoint for a native and natural LLM driven pathway for understanding, modifying and implementing your version of this dashboard.**
+- ` instructions/AGENT.md` is analogous to `AGENTS.md` or `CLAUDE.md` that you might find and use with _Codex_ and/or _Claude Code_ and is a good starting point for developing your own workflow.
+- [`LLM_QUICKSTART.md`](LLM_QUICKSTART.md) is a practical technical guide for setting up an IDE and Git workflow, installing a coding agent, using prompts to choose components and wrangle data, and managing iterative country-specific dashboard sessions.
+- An agentic workflow can include adding/removing/modifying features, adding data, adding countries etc.
 
 ## 🏗️ Architecture
 
